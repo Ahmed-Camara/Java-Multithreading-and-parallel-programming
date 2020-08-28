@@ -41,7 +41,7 @@ public class Main {
 		public void run() {
 			
 			//1. With Synchronization
-			obj.incrementSumVariable();
+			//obj.incrementSumVariable();
 			
 			
 			//2 . With Synchronization
