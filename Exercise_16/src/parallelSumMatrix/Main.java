@@ -5,7 +5,7 @@ import java.util.concurrent.RecursiveAction;
 
 public class Main {
 	
-	private static int size = 6000;
+	private static int size = 8;
 	
 	public static void main(String[] args) {
 		
@@ -18,21 +18,6 @@ public class Main {
 				b[i][j] = (int)(Math.random() * size);
 			}
 		}
-		/*
-		for(int i = 0; i < size; i++) {
-			for(int j = 0; j < size; j++) {
-				System.out.print(a[i][j]+"    ");
-			}
-			System.out.println();
-		}
-		
-		System.out.println();
-		for(int i = 0; i < size; i++) {
-			for(int j = 0; j < size; j++) {
-				System.out.print(b[i][j]+"    ");
-			}
-			System.out.println();
-		}*/
 		System.out.println();
 		double [][]result;
 		long start = System.currentTimeMillis();
@@ -45,13 +30,6 @@ public class Main {
 				+Runtime.getRuntime().availableProcessors()+" processors is : "+difference
 				+" milliseconds");
 		
-		/*System.out.println("SUM of matrix is equal to : ");
-		for(int i = 0; i < size; i++) {
-			for(int j = 0; j < size; j++) {
-				System.out.print(result[i][j]+"    ");
-			}
-			System.out.println();
-		}*/
 		System.out.println();
 		System.out.println();
 		
@@ -65,14 +43,6 @@ public class Main {
 		System.out.println("Time using "
 				+Runtime.getRuntime().availableProcessors()+" processors is : "+difference
 				+" milliseconds");
-		
-		/*-System.out.println("SUM of matrix is equal to : ");
-		for(int i = 0; i < size; i++) {
-			for(int j = 0; j < size; j++) {
-				System.out.print(result[i][j]+"    ");
-			}
-			System.out.println();
-		}*/
 	}
 	
 	private static double [][] sequentialAddMatrix(double [][]a,double [][]b){
