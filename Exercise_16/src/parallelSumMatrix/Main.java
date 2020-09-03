@@ -5,7 +5,7 @@ import java.util.concurrent.RecursiveAction;
 
 public class Main {
 	
-	private static int size = 8;
+	private static int size = 6000;
 	
 	public static void main(String[] args) {
 		
